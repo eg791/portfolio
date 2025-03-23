@@ -1,78 +1,115 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<html>
-    <head>
-        <title>Mans datorikas portfolio!</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-        body {font-family: "Lato", sans-serif}
-        .mySlides {display: none}
-        </style>
-    </head>
-    <body>
-        <div class="w3-top">
-          <div class="w3-bar w3-black w3-card">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-            <a href="#Attēlu apstrāde" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Attēlu apstrāde</a>
-            <a href="#Multimediji" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Multimediji</a>
-            <a href="#teksta apstrāde" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Teksta apstrāde</a>
-            <a href="#Izklājlapas" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Izklājlapas</a>
-            <div class="w3-dropdown-hover w3-hide-small">
-            </div>
-             <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-            </div>
-        </div>
-        <h1>Mans datorikas portfolio</h1>
-        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Attēlu apstrāde">
-        <h2>Attēlu apstrāde</h2>
-        <p>Mācoties par attēlu apstrādi es apguvu dažādu veidu attēlu apstrādes formas, kā rastgrafiku, vektorgrafiku,
-            animāciju ar rastgrafikas programmu un 3D objektu veidošanu.</p>
-        <h3>Rastgrafika</H3>
-        <h4>Animācija</h4>
-        <img src="Images/wifi.gif" alt="Wifi banner" style="width:750px;height:250px;"/>
-        <p>Animācija tika veidota ar GIMP programmu.</p>
-        <h3>Vektorgrafika</h3>
-        <img src="Images/logo ideja.svg" alt="Logo ideja" style="width:200px;height:200px;"/>
-        <h3>3D printēšana</h3>
-        <img src="Images/Detela6.stl" style="width:200px;height:200px;"/>
-        </div>
-        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Multimediji">
-        <h2>Multimediju satura veidošana</h2>
-        </div>
-        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Teksta apstrāde">
-        <h2>Teksta apstrāde</h2>
-        </div>
-        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Izklājlapas">
-        <h2>Izklājlapas</h2>
-        </div>
-    </body>
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    </footer>
-    <script>
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function myFunction() {
-          var x = document.getElementById("navDemo");
-          if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-          } else { 
-            x.className = x.className.replace(" w3-show", "");
-          }
-        }
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
 
-        // When the user clicks anywhere outside of the modal, close it
-        var modal = document.getElementById('ticketModal');
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-    </script>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#sākums" class="w3-bar-item w3-button w3-padding-large">Sākums</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="Attēlu apstrāde">Attēlu apstrāde<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#rastrgrafika" class="w3-bar-item w3-button">Rastrgrafika</a>
+        <a href="#vektorgrafika" class="w3-bar-item w3-button">Vektorgrafika</a>
+      </div>
+    </div>
+    <a href="#teksta" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Teksta apstrāde</a>
+    <a href="#izklājlapas" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Izklājlapas</a>
+    <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Video</a>
+    <a href="#3D" class="w3-bar-item w3-button w3-padding-large w3-hide-small">3D modelēšana</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#rastrgrafika" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Rastrgrafika</a>
+  <a href="#vektorgrafika" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Vektorgrafika</a>
+  <a href="#teksta" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Teksta apstrāde</a>
+  <a href="#izklājlapas" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Izklājlapas</a>
+  <a href="#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Video</a>
+  <a href="#3D" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">3D modelēšana</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Sākums -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="sākums">
+    <h2 class="w3-wide">Elza Galvanovska</h2>
+    <p class="w3-opacity"><i>mans datorikas portfolio</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <!-- Rastrgrafika -->
+  <div class="w3-black" id="rastrgrafika">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Rastrgrafika</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+    </div>
+  </div>
+  
+  <!-- Vektorgrafika -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="vektorgrafika">
+    <h2 class="w3-wide w3-center">Vektorgrafika</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+  </div>
+  
+  <!-- Teksta apstrāde -->
+  <div class="w3-black" id="teksta">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Teksta apstrāde</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+    </div>
+  </div>
+  
+  <!-- Izklājlapas -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="izklājlapas">
+    <h2 class="w3-wide w3-center">Izklājlapas</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+  </div>
+  
+  <!-- Video -->
+  <div class="w3-black" id="video">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Video</h2>
+      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+    </div>
+  </div>
+  
+  <!-- 3D modelēšana -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="3D">
+    <h2 class="w3-wide w3-center">3D modelēšana</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+  </div>
+  
+</div>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
 </html>
