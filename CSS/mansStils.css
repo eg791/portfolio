@@ -1,12 +1,13 @@
-#sākums {
-  background-image: url('images/computers.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 50px;
-}
 img {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+
+#taisnsturis {
+ width: 100%;
+ height: auto;
+ align-content: center;
 }

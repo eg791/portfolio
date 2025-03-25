@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="mansStils.css">
+<link rel="stylesheet" href="CSS/mansStils.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -43,21 +43,33 @@ body {font-family: "Lato", sans-serif}
   <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Video</a>
   <a href="index.html#3D" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">3D modelēšana</a>
 </div>
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
     <h2 class="w3-wide">Droša interneta lietošana</h2>
     <p class="w3-justify">Drošai interneta lietošanai ir svarīgi izmantot spēcīgas paroles, neklikšķināt uz aizdomīgām saitēm un aizsargāt savus personīgos datus. Jābūt uzmanīgam, daloties ar informāciju tiešsaistē, un jāizmanto drošības rīki, piemēram, divpakāpju autentifikācija un antivīruss.</p>
       <p class="w3-opacity">Informācija iegūta no:
-      <a href="https://us.norton.com/blog/privacy/public-wifi" target="_blank" rel="noopener noreferrer">avots2</a>
+      <a href="https://us.norton.com/blog/privacy/public-wifi" target="_blank" rel="noopener noreferrer">avots1</a>
       </p>
   </div>
   <div class="w3-black">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <img src="Images/wifi.gif" alt="animācija" style="max-width:800px"/>
-      <p class="w3-justify"></p>
+      <div style="text-align: center;">
       <p class="w3-opacity">Attēls iegūts no:
-      <a href="https://www.dreamstime.com/hand-credit-card-line-icon-linear-style-sign-mobile-concept-web-design-bank-outline-vector-payment-transaction-image168497900" target="_blank" rel="noopener noreferrer">avots1</a>
+      <a href="https://www.dreamstime.com/hand-credit-card-line-icon-linear-style-sign-mobile-concept-web-design-bank-outline-vector-payment-transaction-image168497900" target="_blank" rel="noopener noreferrer">avots2</a>
      </p>
+      </div>
     </div>
   </div>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
     </body>
 </html>
