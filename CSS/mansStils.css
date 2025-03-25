@@ -1,0 +1,12 @@
+#sākums {
+  background-image: url('images/computers.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
